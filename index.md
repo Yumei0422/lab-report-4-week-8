@@ -44,6 +44,9 @@ java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[a
 java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[]>
 
 ```
+![Image](Failuremine1.png)
+![Image](Failuremine2.png)
+![Image](Failuremine3.png)
 
 * All 3 of the test fails for the other group's program and this shows where it fails
 
@@ -69,6 +72,9 @@ And there's still some more text after that.
 
 ]>
 ```
+![Image](Failure1.png)
+![Image](Failure2.png)
+![Image](Failure3.png)
 
 * For snippet 1, I think the problem can be fixed in less than 10 lines as the only place that the backtip is causing a problem is when there's a backtick before the first open bracket. We can probably add a statement to check if there's a backtip before the variable "nextOpenBracket". If yes, we don't add the link to the variable toReturn.
 * For snippet 2, our group's code was able to recognize the nested link, but can't pass if there's nestd brackets, and escaped brackets. This case might be trickier to be all checked in under 10 lines since there's many cases to consider and we might have to write an if statement for each condition nested bracket and escaped brackets condition. 
