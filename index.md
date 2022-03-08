@@ -73,7 +73,6 @@ And there's still some more text after that.
 ]>
 ```
 ![Image](Failure1.png)
-![Image](Failure2.png)
 ![Image](Failure3.png)
 
 * For snippet 1, I think the problem can be fixed in less than 10 lines as the only place that the backtip is causing a problem is when there's a backtick before the first open bracket. We can probably add a statement to check if there's a backtip before the variable "nextOpenBracket". If yes, we don't add the link to the variable toReturn.
